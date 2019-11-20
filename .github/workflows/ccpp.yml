@@ -16,6 +16,7 @@ jobs:
       run: |
         cd bin/ 
         pwd
+        ls
     - name: make
       run: make
     - name: make check
