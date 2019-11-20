@@ -12,8 +12,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: switch-branch
-      run: cd bin/
+    - shell: bash
+      run: cd bin/ 
     - name: make
       run: make
     - name: make check
