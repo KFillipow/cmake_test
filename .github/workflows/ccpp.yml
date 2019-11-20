@@ -17,18 +17,20 @@ jobs:
         cd bin/ 
         pwd
         ls
-    - name: make
+    - name: cmake
       shell: bash
       run: |
-        cd bin/
-        make
-    - name: make check
+        cmake
+    - name: make clean
       shell: bash
       run: |
-        cd /bin
-        make check
-    - name: make distcheck
+        make clean
+    - name: make 
       shell: bash
       run: |
-        cd /bin
-        make distcheck
+        make 
+    - name: run
+      shell: bash
+      run: |
+        ./testcmake
+
