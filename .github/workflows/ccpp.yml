@@ -18,8 +18,17 @@ jobs:
         pwd
         ls
     - name: make
-      run: make
+      shell: bash
+      run: |
+        cd bin/
+        make
     - name: make check
-      run: make check
+      shell: bash
+      run: |
+        cd /bin
+        make check
     - name: make distcheck
-      run: make distcheck
+      shell: bash
+      run: |
+        cd /bin
+        make distcheck
