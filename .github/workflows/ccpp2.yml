@@ -1,11 +1,7 @@
 name: C/C++ CI
 
 on: 
-  push:
-    branches: 
-      - master
-    paths:
-      - "bin/*"
+  push
     
 
 jobs:
@@ -15,8 +11,6 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: configure
-      run: ./configure
     - name: make
       run: make
     - name: make check
