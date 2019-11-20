@@ -21,10 +21,6 @@ jobs:
       shell: bash
       run: |
         cmake
-    - name: make clean
-      shell: bash
-      run: |
-        make clean
     - name: make 
       shell: bash
       run: |
