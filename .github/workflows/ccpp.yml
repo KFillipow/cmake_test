@@ -12,17 +12,14 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - shell: bash
-      run: |
-        cd bin/ 
-        pwd
-        ls
     - name: build
       shell: bash
       run: |
+        pwd
         sudo ./build
     - name: run
       shell: bash
       run: |
-        .bin/testcmake
+        pwd
+        ./bin/testcmake
 
