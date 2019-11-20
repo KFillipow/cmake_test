@@ -16,10 +16,12 @@ jobs:
       shell: bash
       run: |
         pwd
+        ls
         sudo ./build
     - name: run
       shell: bash
       run: |
         pwd
+        ls
         ./bin/testcmake
 
