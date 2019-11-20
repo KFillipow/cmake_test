@@ -17,16 +17,12 @@ jobs:
         cd bin/ 
         pwd
         ls
-    - name: cmake
+    - name: build
       shell: bash
       run: |
-        cmake
-    - name: make 
-      shell: bash
-      run: |
-        make 
+        sudo ./build
     - name: run
       shell: bash
       run: |
-        ./testcmake
+        .bin/testcmake
 
